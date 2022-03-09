@@ -1,1 +1,3 @@
-console.log("hello");
+import home from "./Pages/Home/home";
+
+home();
