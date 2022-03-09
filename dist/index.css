@@ -5,6 +5,7 @@
 
 body {
     background: black;
+    overflow-x: hidden;
 }
 
 ul {
@@ -37,6 +38,11 @@ nav p {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+#menu-background {
+    width: 50%;
+    height: 100%;
 }
 
 #home-box {
@@ -81,4 +87,17 @@ nav p {
 #about-picture {
     width: 15rem;
     align-self: flex-start;
+}
+
+#menu-box {
+    width: 50rem;
+    height: 100rem;
+    position: absolute;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
 }

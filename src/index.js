@@ -1,5 +1,6 @@
 import home from "./Pages/Home/home";
 import about from "./Pages/About/about";
+import menu from "./Pages/Menu/menu";
 
 // array with pages and match em up to the p tags on click as well as a function to delete the current node;
 // ez;
@@ -19,13 +20,17 @@ const removeNodes = () => {
 }
 
 const changePage = (e) => {
+    removeNodes();
     let container = getContainer();
     switch(e.target.textContent) {
         case "Home":
-            home(container)
+            home(container);
             break;
         case "About":
-            about(container)
+            about(container);
+            break;
+        case "Menu":
+            menu(container);
             break;
     }
 }
@@ -33,7 +38,6 @@ const changePage = (e) => {
 const plinks = document.querySelectorAll("p");
 for (let i = 0; i < plinks.length; i++) {
     plinks[i].addEventListener("click", (e) => {
-        removeNodes();
         changePage(e)});
 }
 
