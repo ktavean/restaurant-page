@@ -1,0 +1,19 @@
+#about-box {
+    width: 57rem;
+    height: 35rem;
+    position: absolute;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 2rem;
+}
+
+#about-box h3 {
+    font-weight: bold;
+    font-size: 3rem;
+}
