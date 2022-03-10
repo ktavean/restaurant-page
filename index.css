@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;500&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: "Inconsolata";
 }
 
 body {
@@ -8,19 +10,40 @@ body {
     overflow-x: hidden;
 }
 
-ul {
+nav {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    background: rgb(0, 0, 0);
+    padding: 1rem 0rem;
+}
+
+nav img {
+    width: clamp(5rem, 6vw, 8rem);
+    margin-right: 2rem;
+    border-radius: 1rem;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
     list-style: none;
 }
 
 nav p {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 2vw, 2rem);
     font-weight: bold;
     cursor: pointer;
+}
+
+nav p:hover {
+    color: #D32A2A;
+}
+
+.active {
+    color: #D32A2A;
 }
 
 #content {
@@ -41,38 +64,41 @@ nav p {
 }
 
 #menu-background {
-    width: 50%;
+    width: 100%;
     height: 100%;
+    z-index: -1;
 }
 
 #home-box {
     width: 115rem;
     height: 44rem;
     position: absolute;
-    top: 15%;
+    margin-top: 45rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
 
 #about-box {
-    width: 57rem;
-    height: 35rem;
+    width: clamp(36rem, 51vw, 57rem);
+    height: clamp(12rem, 20vw, 23rem);
     position: absolute;
-    top: 15%;
+    margin-top: clamp(22rem, 35vw, 40rem);
     display: flex;
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.85);
     color: white;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    border-radius: 0.5rem;
+    border: 1px solid white;
 }
 
-#about-text {
+#about-text, #contact-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,63 +107,66 @@ nav p {
 
 #about-box h3 {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
 #about-picture {
-    width: 15rem;
+    width: clamp(8rem, 13vw, 15rem);
     align-self: flex-start;
+    border: 2px solid white;
 }
 
 #menu-box {
-    width: 50rem;
-    height: 72rem;
+    width: clamp(30rem, 50vw, 50rem);
+    height: clamp(20rem, 56vw, 70rem);
     position: absolute;
-    top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
     background: rgba(0, 0, 0, 0.7);
+    border-radius: 0.5rem;
     border: 1px solid white;
     color: white;
 }
 
-#menu-box h2 {
-    font-size: 3rem;
+#menu-box h2, #contact-box h2 {
+    font-size: clamp(1.5rem, 2vw, 3rem);
     font-weight: bold;
-    margin-bottom: 5rem;
+    margin-bottom: clamp(0.5rem, 4vw, 5rem);
 }
 
 .menu-item {
     display: grid;
-    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-columns: 1fr 0.2fr 0.8fr;
     grid-template-rows: 0.8fr 0.8fr;
-    width: 40rem;
+    width: clamp(20rem, 35vw, 40rem);
     justify-items: center;
     align-items: center;
     border: 2px solid white;
     background: rgba(0, 0, 0, 0.8);
     margin-bottom: 0.3rem;
     padding-left: 0.5rem;
+    cursor: pointer;
+    font-weight: 400;
 }
 
 .food-name {
     grid-column: 1;
     grid-row: 1;
-    font-size: 2rem;
+    font-size: clamp(0.5rem, 2vw, 2rem);
 }
 
 .food-price {
     grid-column: 2;
     grid-row: 1;
-    font-size: 2rem;
+    font-size: clamp(0.5rem, 2.5vw, 2rem);
 }
 
 .food-desc {
     grid-column: 1;
     grid-row: 2;
-    font-size: 1.5rem;
+    font-size: clamp(0.5rem, 1.5vw, 1.5rem);
 }
 
 .food-img {
@@ -146,5 +175,24 @@ nav p {
 }
 
 .menu-item img {
-    width: 10rem;
+    width: clamp(1rem, 8vw, 10rem);
+}
+
+#contact-box {
+    width: clamp(38rem, 51vw, 57rem);
+    height: 25rem;
+    position: absolute;
+    margin-top: clamp(35rem, 35vw, 40rem);;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+}
+
+#contact-box h2 {
+    margin-bottom: 3rem;
 }
