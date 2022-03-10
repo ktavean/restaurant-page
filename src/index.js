@@ -3,9 +3,6 @@ import about from "./Pages/About/about";
 import menu from "./Pages/Menu/menu";
 import contact from "./Pages/Contact/contact";
 
-// array with pages and match em up to the p tags on click as well as a function to delete the current node;
-// ez;
-
 const getContainer = () => {
     return document.querySelector("#content");
 }

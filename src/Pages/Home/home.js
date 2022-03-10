@@ -8,7 +8,7 @@ const home = (container) => {
 
     let background = document.createElement("img");
     background.setAttribute("id", "background");
-    background.setAttribute("src", "../dist/assets/images/sushi.jpg");
+    background.setAttribute("src", "./assets/images/sushi.jpg");
 
     container.appendChild(background);
     container.appendChild(box);

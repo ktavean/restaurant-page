@@ -1,0 +1,18 @@
+#contact-box {
+    width: clamp(38rem, 51vw, 57rem);
+    height: 25rem;
+    position: absolute;
+    margin-top: clamp(35rem, 35vw, 40rem);;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+}
+
+#contact-box h2 {
+    margin-bottom: 3rem;
+}

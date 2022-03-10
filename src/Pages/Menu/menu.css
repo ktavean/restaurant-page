@@ -1,58 +1,54 @@
 #menu-box {
-    width: 50rem;
-    height: 70rem;
+    width: clamp(30rem, 50vw, 50rem);
+    height: clamp(20rem, 56vw, 70rem);
     position: absolute;
-    top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
     background: rgba(0, 0, 0, 0.7);
+    border-radius: 0.5rem;
     border: 1px solid white;
     color: white;
 }
 
-#menu-background {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-#menu-box h2 {
-    font-size: 3rem;
+#menu-box h2, #contact-box h2 {
+    font-size: clamp(1.5rem, 2vw, 3rem);
     font-weight: bold;
-    margin-bottom: 5rem;
+    margin-bottom: clamp(0.5rem, 4vw, 5rem);
 }
 
 .menu-item {
     display: grid;
-    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-columns: 1fr 0.2fr 0.8fr;
     grid-template-rows: 0.8fr 0.8fr;
-    width: 40rem;
+    width: clamp(20rem, 35vw, 40rem);
     justify-items: center;
     align-items: center;
     border: 2px solid white;
     background: rgba(0, 0, 0, 0.8);
     margin-bottom: 0.3rem;
     padding-left: 0.5rem;
+    cursor: pointer;
+    font-weight: 400;
 }
 
 .food-name {
     grid-column: 1;
     grid-row: 1;
-    font-size: 2rem;
+    font-size: clamp(0.5rem, 2vw, 2rem);
 }
 
 .food-price {
     grid-column: 2;
     grid-row: 1;
-    font-size: 2rem;
+    font-size: clamp(0.5rem, 2.5vw, 2rem);
 }
 
 .food-desc {
     grid-column: 1;
     grid-row: 2;
-    font-size: 1.5rem;
+    font-size: clamp(0.5rem, 1.5vw, 1.5rem);
 }
 
 .food-img {
@@ -61,5 +57,5 @@
 }
 
 .menu-item img {
-    width: 10rem;
+    width: clamp(1rem, 8vw, 10rem);
 }
