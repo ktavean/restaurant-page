@@ -3,7 +3,7 @@ const menu = (container) => {
     //background
 
     let background = document.createElement("img");
-    background.setAttribute("src", "./assets/images/sushi3.jpg");
+    background.setAttribute("src", "./assets/images/sushi4.jpg");
     background.setAttribute("id", "menu-background");
 
     //box + title
@@ -55,7 +55,7 @@ const menu = (container) => {
         {
             fdname: "Naruto Ramen",
             price: "$5",
-            desc: "Just like at Ichiraku's",
+            desc: "Just like Ichiraku's",
             img: "./assets/images/menu/naruto-ramen.jpg"
         },
     ]
@@ -89,6 +89,15 @@ const menu = (container) => {
 
     container.appendChild(background);
     container.appendChild(box);
+
+    const menuitems = document.querySelectorAll(".menu-item");
+    if (menuitems) {
+    for (let i = 0; i < menuitems.length; i++) {
+        menuitems[i].addEventListener("click", () => {
+            alert("Added to cart!");
+        })
+    }
+}
 
 }
 

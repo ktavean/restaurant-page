@@ -11,7 +11,7 @@ const about = (container) => {
     textContent.appendChild(h3);
 
     let p = document.createElement("p");
-    p.textContent = "suntem o corporatie smechera facem bani si suntem smecheri avem pula mare rau din 1980 si futem tot ce prindem! facem sushi bun ca avem talent."
+    p.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error optio quia excepturi nam magni sed, aperiam nulla officia voluptatum totam quibusdam iusto possimus aut ab unde molestiae ullam corporis ratione!";
     textContent.appendChild(p);
     box.appendChild(textContent);
     
@@ -23,6 +23,7 @@ const about = (container) => {
     let background = document.createElement("img");
     background.setAttribute("src", "./assets/images/sushi2.jpg");
     background.setAttribute("id", "background");
+
 
     container.appendChild(background);
     container.appendChild(box);
