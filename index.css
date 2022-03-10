@@ -83,7 +83,6 @@ nav p:hover {
     font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
-
 #about-box {
     width: clamp(36rem, 51vw, 57rem);
     height: clamp(12rem, 20vw, 23rem);
